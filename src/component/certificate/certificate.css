@@ -1,0 +1,69 @@
+.main {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.input {
+    width: 70%;
+    border: 1px solid rgba(154, 129, 131, 0.571);
+    border-radius: 5px;
+    outline: none;
+    padding: 0 10px;
+}
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.code-box{
+    justify-content: center;
+}
+
+.text-box {
+    position: relative;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.uimg {
+    height: 100px;
+    width: 151px;
+    mix-blend-mode: multiply;
+    position: relative;
+    top: -14px;
+    right: 0px;
+}
+
+.content {
+    z-index: 1;
+}
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .text-box h1,
+  h3 {
+    animation: slideIn 1.5s ease-in-out;
+  }
